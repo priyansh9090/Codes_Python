@@ -1,4 +1,4 @@
-number = 2
+number = 10
   
 # since no numb variable is
 # defined it will give NameError.
