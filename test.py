@@ -10,8 +10,7 @@ def getdata(cmd):
     output,error=process.communicate()
     return output,error
 def made_requests(errortype):
-    
-    r=requests.get("https://api.stackexchange.com/"+"/2.2/search?order=desc&sort=activity&tagged=Python&intitle={}&site=stackoverflow".format(errortype))
+        r=requests.get("https://api.stackexchange.com/"+"/2.2/search?order=desc&sort=activity&tagged=Python&intitle={}&site=stackoverflow".format(errortype))
     return r.json()
 def get_urls(js):
     url_links=[]
@@ -41,4 +40,3 @@ js3=made_requests(err[3])
 get_urls(js1)
 get_urls(js2)
 get_urls(js3)
-nishi
