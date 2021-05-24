@@ -30,6 +30,7 @@ error=error.decode("utf-8")
 if(error==""):
     print("NO ERRORS FOUND")
 else:
+    # print(err))
     err=error.split("\n",3)
     errmsg=err[3].split(":",1)
     errortype=errmsg[0]
@@ -40,3 +41,4 @@ js3=made_requests(err[3])
 get_urls(js1)
 get_urls(js2)
 get_urls(js3)
+nishi
